@@ -20,22 +20,22 @@ audio {
 
 nav p {
     text-align: center;
+    color: rgb(13, 19, 13);
     margin: 0 0 30px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Gravitas One', cursive;
 }
 
 nav a {
     color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     text-decoration: none;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Gravitas One', cursive;
 }
 
 .caixa li:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     transition: 0.3s;
 }
 
@@ -57,10 +57,33 @@ main {
     width: 350px;
 }
 
-.texto-principal {
+.video {
+    display: flex;
+}
+
+.container {
     text-align: left;
     margin: 30px 40% 0 20px;
     box-shadow: 5px 5px 10px rgb(53, 53, 53);
+}
+
+.texto-principal {
+    display: flex;
+}
+
+.ifram {
+    display: inline-block;
+    position: absolute;
+    margin: 100px 65%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    font-family: 'Gravitas One', cursive;
+}
+
+.ifram h4 {
+    margin-bottom: 20px;
 }
 
 .texto-principal h1 {
@@ -76,11 +99,7 @@ main {
     padding: 20px;
 }
 
-.video {
-    width: 100%;
-    position: relative;
-    flex-basis: auto;
-}
+.video {}
 
 .produtos li,
 img {
@@ -123,25 +142,14 @@ footer {
     margin: 0 0 30px;
 }
 
-body {
-    background-image: url("img/s200fundo.jpg");
-    animation-name: slidein;
-    animation-timing-function: ease-in-out;
-    width: 100%;
-    height: 100%;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-}
-
 @keyframes slidein {
     0% {
         background-image: url("img/bmw.jpg");
     }
-    30% {
+    0% {
         background-image: url("img/240.jpg");
     }
-    70% {
+    0% {
         background-image: url("img/bmw.jpg");
     }
 }
