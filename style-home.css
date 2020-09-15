@@ -1,0 +1,147 @@
+body {
+    background: url(img/s200fundo.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+audio {
+    opacity: 0.5;
+    width: 200px;
+}
+
+.caixa {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+nav p {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 20px;
+    font-family: 'Gravitas One', cursive;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Zilla Slab', serif;
+}
+
+.caixa li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav,
+ul,
+li {
+    display: inline-block;
+}
+
+main {
+    background-image: linear-gradient(to top, rgba(184, 169, 169, 0.3), rgb(110, 102, 102, 0.7));
+}
+
+.icon-logo {
+    width: 350px;
+}
+
+.texto-principal {
+    text-align: left;
+    margin: 30px 40% 0 20px;
+    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+}
+
+.texto-principal h1 {
+    font-size: 50px;
+    color: rgb(149, 218, 149);
+    font-family: 'Gravitas One', cursive;
+    padding: 30px 10px;
+}
+
+.texto-principal p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    flex-basis: auto;
+}
+
+.produtos li,
+img {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-left: 12px;
+}
+
+.produtos h2 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.produtos li {
+    margin: 20px 20px;
+}
+
+.produtos :hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.logo-rodape {
+    width: 200px;
+    height: 150px;
+    margin: 50px 0 20px;
+}
+
+.copy {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 30px;
+}
+
+body {
+    background-image: url("img/s200fundo.jpg");
+    animation-name: slidein;
+    animation-timing-function: ease-in-out;
+    width: 100%;
+    height: 100%;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        background-image: url("img/bmw.jpg");
+    }
+    30% {
+        background-image: url("img/240.jpg");
+    }
+    70% {
+        background-image: url("img/bmw.jpg");
+    }
+}
