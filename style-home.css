@@ -1,155 +1,171 @@
 body {
-    background: url(img/s200fundo.jpg) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(img/s200fundo.jpg) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 audio {
-    opacity: 0.5;
-    width: 200px;
+  opacity: 0.5;
+  width: 200px;
 }
 
-.caixa {
-    width: 100%;
-    height: 120px;
-    position: relative;
-    text-align: center;
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: rgb(150, 150, 150);
+  top: 0;
+  z-index: 10;
+  
 }
 
-nav p {
-    text-align: center;
-    color: rgb(13, 19, 13);
-    margin: 0 0 30px;
-    font-size: 30px;
-    font-family: 'Gravitas One', cursive;
+.header img{
+    width: 300px;
+    height: 250px;
+    margin: -70px -40px;
 }
 
-nav a {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    padding: 20px;
-    text-decoration: none;
-    font-family: 'Gravitas One', cursive;
+.header nav, ul, li {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.header ul {
+    margin-left: 400px;
 }
 
 .caixa li:hover {
-    transform: scale(1.3);
-    transition: 0.3s;
+    transform: scale(1.2);
+    transition: 0.1s;
 }
 
-nav ul {
-    width: 100%;
+.header a {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
-nav,
-ul,
-li {
-    display: inline-block;
-}
 
 main {
-    background-image: linear-gradient(to top, rgba(184, 169, 169, 0.3), rgb(110, 102, 102, 0.7));
+  margin: 20px;
+  margin-top: 70px;
+  background-image: linear-gradient(
+    to top,
+    rgba(184, 169, 169, 0.3),
+    rgb(110, 102, 102, 0.7)
+  );
 }
 
 .icon-logo {
-    width: 350px;
+  width: 300px;
+  margin-left: 30px;
 }
 
 .video {
-    display: flex;
+  display: flex;
 }
 
 .container {
-    text-align: left;
-    margin: 30px 40% 0 20px;
-    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+  text-align: left;
+  margin: 30px 40% 0 20px;
+  box-shadow: 5px 5px 10px rgb(53, 53, 53);
 }
 
 .texto-principal {
-    display: flex;
+  display: flex;
 }
 
 .ifram {
-    display: inline-block;
-    position: absolute;
-    margin: 100px 65%;
-    text-align: center;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    padding-bottom: 20px;
-    font-family: 'Gravitas One', cursive;
+  display: inline-block;
+  position: absolute;
+  margin: 100px 65%;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+  font-family: "Gravitas One", cursive;
 }
 
 .ifram h4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .texto-principal h1 {
-    font-size: 50px;
-    color: rgb(149, 218, 149);
-    font-family: 'Gravitas One', cursive;
-    padding: 30px 10px;
+  font-size: 50px;
+  color: rgb(149, 218, 149);
+  font-family: "Gravitas One", cursive;
+  padding: 30px 10px;
 }
 
 .texto-principal p {
-    font-family: 'Zilla Slab', serif;
-    font-size: 30px;
-    padding: 20px;
+  font-family: "Zilla Slab", serif;
+  font-size: 30px;
+  padding: 20px;
 }
-
-.video {}
 
 .produtos li,
 img {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    padding-left: 12px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding-left: 12px;
 }
 
 .produtos h2 {
-    margin: 10px 0;
-    font-size: 25px;
+  margin: 10px 0;
+  font-size: 25px;
 }
 
 .produtos li {
-    margin: 20px 20px;
+  margin: 20px 20px;
 }
 
 .produtos :hover {
-    transform: scale(1.04);
-    transition: 0.3s;
+  transform: scale(1.04);
+  transition: 0.3s;
 }
 
 footer {
-    text-align: center;
-    width: 100%;
-    height: 200px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
 }
 
 .logo-rodape {
-    width: 200px;
-    height: 150px;
-    margin: 50px 0 20px;
+  width: 200px;
+  height: 150px;
+  margin: 50px 0 20px;
 }
 
 .copy {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin: 0 0 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+
+body {
+  background-image: url("img/s200fundo.jpg");
+  animation-name: slidein;
+  animation-timing-function: ease-in-out;
+  width: 100%;
+  height: 100%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes slidein {
-    0% {
-        background-image: url("img/bmw.jpg");
-    }
-    0% {
-        background-image: url("img/240.jpg");
-    }
-    0% {
-        background-image: url("img/bmw.jpg");
-    }
+  1% {
+    background-image: url("img/bmw.jpg");
+  }
+  50% {
+    background-image: url("img/240.jpg");
+  }
+  75% {
+    background-image: url("img/bmw.jpg");
+  }
 }

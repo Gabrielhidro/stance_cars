@@ -1,0 +1,174 @@
+main {
+  background-image: linear-gradient(
+    to top,
+    rgba(184, 169, 169, 0.3),
+    rgb(110, 102, 102, 0.7)
+  );
+  position: relative;
+  top: 120px;
+}
+
+body {
+  background: url(img/supra-black.jpg) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+audio {
+  margin: 110px 0 -110px 480px;
+}
+
+/*Caixa de navegaçao*/
+
+.header {
+  background: rgb(126, 131, 133);
+  width: 100%;
+  height: 100px;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.header img {
+  width: 100px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.header a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu-caixa {
+  text-align: right;
+}
+
+.menu-caixa ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.menu-caixa ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.1em;
+  margin: 0 6px;
+}
+
+.menu-caixa li:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.menu-caixa::after {
+  content: "";
+  display: block;
+  width: 1080px;
+  height: 2px;
+  background: #b12300;
+  margin: 13px 0 0 -250px;
+}
+
+/*corpo da página*/
+
+.texto-principal {
+  width: 500px;
+  height: 300px;
+  box-shadow: 7px 7px 5px rgb(53, 53, 53);
+  margin: 20px 0 20px 20px;
+}
+
+.texto-principal h1 {
+  font-size: 24px;
+  margin: 20px 56px 20px 0;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.texto-principal h1:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #b12300;
+  margin: 20px 12px 20px 0;
+}
+
+.texto-principal p {
+  font-size: 18px;
+  margin: 20px 56px 20px 0;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.ifram {
+  text-align: center;
+  height: 40px;
+}
+
+.ifram h1 {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding-top: 45px;
+  margin: 20px 5px 0 5px;
+}
+
+.ifram h1:after {
+  content: "";
+  display: block;
+  width: 390px;
+  height: 2px;
+  background: #b12300;
+  margin: 20px 56px 20px 600px;
+}
+
+/*Parte de Ícones*/
+
+.icones {
+  margin-top: 50px;
+}
+
+.produto-icone li {
+  display: inline-block;
+  margin-left: 45px;
+  margin-bottom: 70px;
+}
+
+.produto-icone h2 {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  
+}
+
+.produto-icone :hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.icon-logo {
+  width: 300px;
+  height: 300px;
+}
+
+/*footer*/
+
+.foot {
+  margin-top: 200px;
+  text-align: center;
+  text-decoration: none;
+}
